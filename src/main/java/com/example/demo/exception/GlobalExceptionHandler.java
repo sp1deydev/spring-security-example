@@ -24,7 +24,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(ApplicationException.class)
     public ResponseEntity<?> handleApplicationException(ApplicationException ex) {
-        log.info("[handleApplicationException] - handle exception {} with message {}", ex.getCode(), ex.getMessage());
+        log.info("[handleApplicationException] - handle exception: {} with message: {}", ex.getCode(), ex.getMessage());
 
         ErrorResponse responseData = new ErrorResponse(ex.getCode(), ex.getMessage());
         String traceId = UUID.randomUUID().toString();

@@ -1,4 +1,4 @@
-package com.example.demo.dto.Response;
+package com.example.demo.dto.Request;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -10,8 +10,7 @@ import lombok.experimental.FieldDefaults;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserResponse {
-    String username;
-    String password;
+public class TokenRequest {
+    String token;
 }
 

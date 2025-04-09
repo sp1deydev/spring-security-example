@@ -10,8 +10,8 @@ import lombok.experimental.FieldDefaults;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserResponse {
-    String username;
-    String password;
+public class AuthResponse {
+    String accessToken;
+    String refreshToken;
 }
 

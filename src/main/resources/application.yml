@@ -4,6 +4,13 @@ server:
     context-path: /api
 
 spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id:
+            client-secret:
   application:
     name: payment
   datasource:
